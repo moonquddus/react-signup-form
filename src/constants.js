@@ -1,5 +1,5 @@
-export const VISIBILITY_FILTERS = {
-  ALL: "all",
-  COMPLETED: "completed",
-  INCOMPLETE: "incomplete"
+export const TABS = {
+  0: "User",
+  1: "Privacy",
+  2: "Done"
 };
