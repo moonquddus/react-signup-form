@@ -32,14 +32,15 @@ const useStyles = makeStyles((theme) => ({
 
 // A lib like redux-form would be great in this scenario - but I just needed a basic form, nothing too fancy
 function DetailsForm(props) {
-  const { progress, dispatch } = props
+  const { progress, details, dispatch } = props
   const [showPassword, setShowPassword] = useState(false)
 
   // The state for the form
   // The global store doesn't need to know about this until we're moving on
-  const [name, setName] = useState('')
-  const [role, setRole] = useState('')
-  const [email, setEmail] = useState('')
+  const [name, setName] = useState(details.name)
+  const [role, setRole] = useState(details.role)
+  const [email, setEmail] = useState(details.email)
+  // Don't re-fill in the password, for security purposes
   const [password, setPassword] = useState('')
 
   const [errors, setErrors] = useState({
@@ -157,7 +158,7 @@ function DetailsForm(props) {
 
 const mapStateToProps = (state) => {
   return { 
-    details: state.details,
+    details: state.userDetails,
     progress: state.progress
   }
 }
