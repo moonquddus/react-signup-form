@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { connect } from 'react-redux'
 
 import { updateProgress } from './redux/actions'
@@ -19,7 +19,7 @@ import './App.css'
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    width: 700,
+    width: 600,
     maxWidth: '100%',
     margin: 'auto'
   },

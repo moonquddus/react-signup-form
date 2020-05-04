@@ -38,7 +38,7 @@ export default function(state = initialState, action) {
       return {...state, checkboxes}
     }
     case NEXT_STEP: {
-      const progress = action.payload++
+      const progress = action.payload + 1
       return {...state, progress}
     }
     case UPDATE_PROGRESS: {
