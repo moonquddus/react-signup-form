@@ -4,6 +4,8 @@ import { connect } from 'react-redux'
 import { updateProgress } from './redux/actions'
 
 import DetailsForm from './components/DetailsForm'
+import CheckboxForm from './components/CheckboxForm'
+import Success from './components/Success'
 
 import AppBar from '@material-ui/core/AppBar'
 import Card from '@material-ui/core/Card'
@@ -32,9 +34,6 @@ const useStyles = makeStyles((theme) => ({
 function App(props) {
   const { progress, dispatch } = props
   const classes = useStyles()
-
-  // If we wanted
-  // const [progress, setProgress] = useState(0)
 
   const handleChange = (event, newValue) => {
     setProgress(newValue)
@@ -65,10 +64,10 @@ function App(props) {
             <DetailsForm />
           </TabPanel>
           <TabPanel value={progress} index={1}>
-            Item Two
+            <CheckboxForm />
           </TabPanel>
           <TabPanel value={progress} index={2}>
-            Item Three
+            <Success />
           </TabPanel>
           <LinearProgress variant="determinate" value={((progress) / 2) * 100} />
         </CardContent>
