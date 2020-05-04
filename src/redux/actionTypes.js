@@ -1,3 +1,12 @@
 export const ADD_TODO = "ADD_TODO";
 export const TOGGLE_TODO = "TOGGLE_TODO";
 export const SET_FILTER = "SET_FILTER";
+
+export const UPDATE_DETAILS = 'UPDATE_DATA'
+export const RESET_DETAILS = 'RESET_DETAILS'
+
+export const UPDATE_CHECKBOXES = 'UPDATE_CHECKBOXES'
+export const RESET_CHECKBOXES = 'RESET_CHECKBOXES'
+
+export const NEXT_STEP = 'NEXT_STEP'
+export const UPDATE_PROGRESS = 'UPDATE_PROGRESS'
