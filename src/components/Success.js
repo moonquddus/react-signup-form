@@ -30,7 +30,7 @@ const Success = (props) => {
   })
 
   return (
-    <div className={classes.root}>
+    <div id='success-message' className={classes.root}>
       <Typography variant='h3'>Thanks for signing up!</Typography>
       <EmailIcon className={classes.icon} color='primary' />
       <Typography variant='body1'>

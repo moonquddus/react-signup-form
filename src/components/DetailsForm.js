@@ -139,10 +139,11 @@ function DetailsForm(props) {
             </InputAdornment>
           }
         />
-        <FormHelperText id="password-helper-text">{errors.password}</FormHelperText>
+        <FormHelperText id='password-helper-text'>{errors.password}</FormHelperText>
       </FormControl>
       <div className={classes.alignRight}>
         <Button
+          id='details-submit'
           variant='contained'
           color='primary'
           type='submit'

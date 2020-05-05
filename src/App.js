@@ -74,7 +74,7 @@ function App(props) {
           <TabPanel value={progress} index={2}>
             <Success />
           </TabPanel>
-          <LinearProgress variant="determinate" value={((progress) / 2) * 100} />
+          <LinearProgress variant='determinate' value={((progress) / 2) * 100} />
         </CardContent>
       </Card>
     </div>

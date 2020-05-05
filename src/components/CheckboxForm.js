@@ -43,20 +43,21 @@ function CheckboxForm(props) {
     <form className={classes.root}>
       <FormControl>
         <FormControlLabel
-          control={<Checkbox checked={productUpdates} onChange={event => setProductUpdates(event.target.checked)} name="productUpdates" />}
-          label="Receive updates about Tray.io product by email"
+          control={<Checkbox id='product-update-checkbox' checked={productUpdates} onChange={event => setProductUpdates(event.target.checked)} name='productUpdates' />}
+          label='Receive updates about Tray.io product by email'
         />
       </FormControl>
 
       <FormControl>
         <FormControlLabel
-          control={<Checkbox checked={otherComms} onChange={event => setOtherComms(event.target.checked)} name="otherComms" />}
-          label="Receive communication by email for other products created by the Tray.io team"
+          control={<Checkbox id='other-comms-checkbox' checked={otherComms} onChange={event => setOtherComms(event.target.checked)} name='otherComms' />}
+          label='Receive communication by email for other products created by the Tray.io team'
         />
       </FormControl>
 
       <div className={classes.alignRight}>
         <Button
+          id='checkbox-submit'
           variant='contained'
           color='primary'
           type='submit'

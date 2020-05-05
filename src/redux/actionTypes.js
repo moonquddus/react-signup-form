@@ -1,6 +1,6 @@
-export const ADD_TODO = "ADD_TODO"
-export const TOGGLE_TODO = "TOGGLE_TODO"
-export const SET_FILTER = "SET_FILTER"
+export const ADD_TODO = 'ADD_TODO'
+export const TOGGLE_TODO = 'TOGGLE_TODO'
+export const SET_FILTER = 'SET_FILTER'
 
 export const UPDATE_DETAILS = 'UPDATE_DATA'
 export const RESET_DETAILS = 'RESET_DETAILS'
