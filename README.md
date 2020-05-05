@@ -23,5 +23,5 @@ Do you want to voluntarily give your personal details to this form you downloade
 - I like to use *redux-form* to build some larger forms - went without it today, I want to keep the number of packages used low.
 - `DetailsForm` has all the text fields - to change the configuration, you'd need to modify the template to add an extra `TextField` or whatver input component, and add an state value. The validation configuration in the util function would also need to be updated.
 - `App` houses the main tab framework. If you want to add a page, you just add another `Tab` and an extra content component. Progress bar would need a slight tweak.
-- I use *testing-library* with *jest* for running unit tests everywhere. I also did a simple e2e test with *Cypress* to do a quick mock run of the entire app.
+- I use *testing-library* with *jest* for running unit tests everywhere. I also did a simple e2e test with *Cypress* to do a quick mock run of the entire app. Also *lint* to maintain code formatting quality.
 - The fields in the form are basically hardcoded into the component templates. As an alternative next time, I'd make a map of form elements (inc. field details & validation rules) and have my form component dynamically generate the inputs. It would take a lot longer to implement, but makes it much easier to chop up and re-arrange the form.
