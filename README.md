@@ -9,6 +9,11 @@ Do you want to voluntarily give your personal details to this form you downloade
 3. After it's completed, run `npm run start` and navigate to *http://localhost:3000*
 4. Have fun and complete the form!
 
+### Optional
+
+1. Run `npm run test` to see all the test suites running
+2. Run `npm run cypress` to see the e2e integration test running
+
 ## Notes
 
 - Used *material-ui* to present everything using Google's Material Design (great for rapid prototyping). Although next time I'd use steppers instead of traditional tabs.
@@ -18,5 +23,5 @@ Do you want to voluntarily give your personal details to this form you downloade
 - I like to use *redux-form* to build some larger forms - went without it today, I want to keep the number of packages used low.
 - `DetailsForm` has all the text fields - to change the configuration, you'd need to modify the template to add an extra `TextField` or whatver input component, and add an state value. The validation configuration in the util function would also need to be updated.
 - `App` houses the main tab framework. If you want to add a page, you just add another `Tab` and an extra content component. Progress bar would need a slight tweak.
-- I use *testing-library* and *jest* for running tests, and a couple e2e tests with *cypress*.
+- I use *testing-library* with *jest* for running unit tests everywhere. I also did a simple e2e test with *Cypress* to do a quick mock run of the entire app.
 - The fields in the form are basically hardcoded into the component templates. As an alternative next time, I'd make a map of form elements (inc. field details & validation rules) and have my form component dynamically generate the inputs. It would take a lot longer to implement, but makes it much easier to chop up and re-arrange the form.
