@@ -1,4 +1,7 @@
-import { UPDATE_DETAILS, RESET_DETAILS, UPDATE_CHECKBOXES, RESET_CHECKBOXES, NEXT_STEP, UPDATE_PROGRESS } from "./actionTypes";
+/**
+ * Use these to dispatch actions from your components
+ */
+import { UPDATE_DETAILS, RESET_DETAILS, UPDATE_CHECKBOXES, RESET_CHECKBOXES, NEXT_STEP, UPDATE_PROGRESS } from "./actionTypes"
 
 export const updateDetails = details => ({
   type: UPDATE_DETAILS,

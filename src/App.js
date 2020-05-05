@@ -17,10 +17,15 @@ import TabPanel from './components/TabPanel'
 import Typography from '@material-ui/core/Typography'
 
 import { makeStyles } from '@material-ui/core/styles'
-import './App.css'
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    width: '80vw',
+    height: '80vh',
+    padding: '10vh 10vw',
+    background: 'radial-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7))'
+  },
+  card: {
     width: 600,
     maxWidth: '100%',
     margin: 'auto'
@@ -49,9 +54,9 @@ function App(props) {
   // We can make the tab data an object we can configure outisde the component, then we can add/edit as many tabs as we like
   // ... but that would be a tad overkill for this
   return (
-    <div className='App'>
+    <div className={`App ${classes.root}`}>
       <Typography variant='h1' className={classes.centeredText}>Welcome!</Typography>
-      <Card className={classes.root}>
+      <Card className={classes.card}>
         <AppBar position='static'>
           <Tabs value={progress} onChange={handleChange} aria-label='simple tabs example' variant='fullWidth' scrollButtons='auto'>
             <Tab label='User' value={0} />

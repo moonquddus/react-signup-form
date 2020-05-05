@@ -1,7 +1,7 @@
-import React, { useEffect } from 'react';
+import React, { useEffect } from 'react'
 import { connect } from 'react-redux'
 
-import EmailIcon from '@material-ui/icons/Done';
+import EmailIcon from '@material-ui/icons/Done'
 import Typography from '@material-ui/core/Typography'
 
 import { makeStyles } from '@material-ui/core/styles'
@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
 }))
 
 const Success = (props) => {
-  const { details, checkboxes } = props;
+  const { details, checkboxes } = props
   const classes = useStyles()
 
   useEffect(() => {
@@ -27,7 +27,7 @@ const Success = (props) => {
     console.log('PASSWORD:', details.password)
     console.log('RECEIVE UPDATES:', checkboxes.productUpdates)
     console.log('RECEIVE COMMS:', checkboxes.otherComms)
-  });
+  })
 
   return (
     <div className={classes.root}>
@@ -40,7 +40,7 @@ const Success = (props) => {
         (pssst - check the browser console)
       </Typography>
     </div>
-  );
+  )
 }
 
 const mapStateToProps = (state) => {

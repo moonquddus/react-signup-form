@@ -3,7 +3,7 @@
  * In a larger application, we'd actually split the reducers into their own files for better organization
  */
 
-import { UPDATE_DETAILS, RESET_DETAILS, UPDATE_CHECKBOXES, RESET_CHECKBOXES, NEXT_STEP, UPDATE_PROGRESS } from "./actionTypes";
+import { UPDATE_DETAILS, RESET_DETAILS, UPDATE_CHECKBOXES, RESET_CHECKBOXES, NEXT_STEP, UPDATE_PROGRESS } from "./actionTypes"
 
 const initialState = {
   progress: 0,
@@ -17,7 +17,7 @@ const initialState = {
     productUpdates: false,
     otherComms: false
   }
-};
+}
 
 export default function(state = initialState, action) {
   switch (action.type) {
@@ -46,6 +46,6 @@ export default function(state = initialState, action) {
       return {...state, progress}
     }
     default:
-      return state;
+      return state
   }
 }
