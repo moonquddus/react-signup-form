@@ -5,14 +5,14 @@ Do you want to voluntarily give your personal details to this form you downloade
 ## Set-up and run
 
 1. Run `git clone` and pull this repo into your local workspace
-2. Navigate to the directory with this code and run `npm install`
-3. After it's completed, run `npm run start` and navigate to *http://localhost:3000*
+2. Navigate to the directory with this code and run `yarn install`
+3. After it's completed, run `yarn start` and navigate to *http://localhost:3000*
 4. Have fun and complete the form!
 
 ### Optional
 
-1. Run `npm run test` to see all the test suites running
-2. Run `npm run cypress` to see the e2e integration test running
+1. Run `yarn run test` to see all the test suites running
+2. Run `yarn run cypress` to see the e2e integration test running
 
 ## Notes
 
