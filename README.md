@@ -25,3 +25,4 @@ Do you want to voluntarily give your personal details to this form you downloade
 - `App` houses the main tab framework. If you want to add a page, you just add another `Tab` and an extra content component. Progress bar would need a slight tweak.
 - I use *testing-library* with *jest* for running unit tests everywhere. I also did a simple e2e test with *Cypress* to do a quick mock run of the entire app. Also *lint* to maintain code formatting quality.
 - The fields in the form are basically hardcoded into the component templates. As an alternative next time, I'd make a map of form elements (inc. field details & validation rules) and have my form component dynamically generate the inputs. It would take a lot longer to implement, but makes it much easier to chop up and re-arrange the form.
+- This is a very simple app, but for larger-scale apps I would also add far more validation (prop type validation, for example)
