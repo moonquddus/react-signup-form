@@ -16,7 +16,7 @@
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
     "cypress": "^4.5.0",
-    "eslint": "^6.8.0",
+    "eslint": "^9.26.0",
     "eslint-plugin-react": "^7.19.0",
     "redux-mock-store": "^1.5.4"
   },
